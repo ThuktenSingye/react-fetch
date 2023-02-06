@@ -6,7 +6,7 @@ function TripList() {
     // we can create reusable custom react hook that we can use code below anytime like react hook
     // const [trips, setTrips] = useState([])
     const [url, setUrl] = useState("http://localhost:3000/trips");
-    const {data:trips} = useFetch(url)
+    const {data:trips, isPending, error} = useFetch(url)
     // const fetchTrip = useCallback(async ()=>{  
     //     const response = await fetch(url)
     //     const json = await response.json()
@@ -37,6 +37,8 @@ function TripList() {
   return (
     <div className='triplist'>
         <h2>Trip List</h2>
+        { isPending && <div>Loading trips ...</div> }
+        {error && <div>{error}</div>}
         <ul>
             {trips && trips.map(trip =>(
                 <li key={trip.id}>
