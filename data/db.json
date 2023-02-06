@@ -1,0 +1,35 @@
+{
+    "trips":[
+        {
+            "title": "2 Night Stay in Venice",
+            "price": "Nu 120",
+            "id": "1",
+            "loc": "Europe"
+        },
+        {
+            "title": "3 Night Stay in Paris",
+            "price": "Nu 200",
+            "id": "2",
+            "loc": "America"
+        },
+        {
+            "title": "4 Night Stay in London",
+            "price": "Nu 300",
+            "id": "3",
+            "loc": "Europe"
+        },
+        {
+            "title": "1 Night Stay in California",
+            "price": "Nu 920",
+            "id": "4",
+            "loc": "Europe"
+
+        },
+        {
+            "title": "6 Night Stay in UK",
+            "price": "Nu 230",
+            "id": "5",
+            "loc": "Bhutan"
+        }
+    ]
+}

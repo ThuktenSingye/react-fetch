@@ -1,0 +1,30 @@
+.triplist{
+    width: 480px;
+    margin: 60px auto; /*top and bottom 60px and left and right into auto will align to center*/
+
+}
+.triplist ul{
+    padding: 0;
+}
+.triplist li{
+    list-style-type: none;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+.filters{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+.filters > button {
+   padding: 10px;
+   font-size: 16px;
+   flex-grow: 1;
+   border: 1px solid lightgray;
+   border-radius: 10px;
+   cursor: pointer;
+}

@@ -1,0 +1,8 @@
+ fetch(url) // here url is dynamic hence we need to specifyc dependency value. hence whenever the url value has chanegd the useEffect function will run once again
+        .then( response=> response.json())
+        .then( data =>setTrips(data)) 
+// another way to handle promise
+const asyncFunction = async ()=>{ 
+    const res = await fetch() // until the promise is resolved using fetch(), it will wait.
+    const data = await res.json(res)
+}
